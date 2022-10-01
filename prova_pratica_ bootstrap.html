@@ -10,8 +10,13 @@
   <title>Prova pratica bootstrap</title>
 
   <style>
-    .pippo:hover {
-      color: red;
+    .centra {
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    .spazio {
+      padding: 0px;
     }
   </style>
 
@@ -19,8 +24,8 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <div class="container">
+      <a class="navbar-brand" href="#">Challenger</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,40 +33,71 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active pippo" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link active" aria-current="page" href="#">Documentazione Bootstrap</a>
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success" type="submit">Area Membri</button>
         </form>
       </div>
     </div>
   </nav>
 
-  <p class="pippo">
-    prova
-  </p>
+  <div class="container centra">
+    <h1>CHALLENGER</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. aaaaaaa Aperiam sint, nesciunt odio modi repellat ratione neque, nostrum provident id, eaque ullam labore sequi quas repellendus doloremque. Repellat, itaque. Dolor, quaerat!</p>
+    <button type="button" class="btn btn-primary btn-lg btn-me">LA SFIDA INIZIA QUI</button>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class=" spazio col-xl-4">
+        <!--start card-->
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="immagini\birds-7469509__340.webp" alt="">
+            <div class="card-body">
+              <h3 class="card-title h5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <!--end card-->
+      </div>
+      <div class="spazio col-xl-4">
+        <!--start card-->
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="immagini\monkey-7476326__340.webp" alt="">
+            <div class="card-body">
+              <h3 class="card-title h5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <!--end card-->
+      </div>
+      <div class="spazio col-xl-4">
+        <!--start card-->
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="immagini\books-4305459__340.webp" alt="">
+            <div class="card-body">
+              <h3 class="card-title h5 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <!--end card-->
+      </div>
+        <!--end card-->
+      </div>
+    </div>
+  </div>
+
 
 
 
