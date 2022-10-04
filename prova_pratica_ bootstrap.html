@@ -10,10 +10,6 @@
   <title>Prova pratica bootstrap</title>
 
   <style>
-    .centra {
-      text-align: center;
-      padding-bottom: 60px;
-    }
 
     .spazio {
       padding: 0px;
@@ -25,6 +21,19 @@
 
     .spazio_griglia {
       padding-top: 60px;
+    }
+
+    .centra_flex_box {
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .spazio_fondo_pagina {
+      padding-bottom: 100px;
+    }
+
+    .colore_link {
+      text-decoration: black;
     }
 
   </style>
@@ -45,24 +54,27 @@
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"aria-current="page"  href="https://getbootstrap.com/">Documentazione Bootstrap</a>
+            <a class="nav-link"aria-current="page" href="https://getbootstrap.com/">Documentazione Bootstrap</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <button class="btn btn-outline-success" type="submit">Area Membri</button>
-        </form>
+          <button class="btn btn-outline-info" type="submit">Area Membri</button>
       </div>
     </div>
   </nav>
 
-  <div class="container centra">
-    <h1>CHALLENGER</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. aaaaaaa Aperiam sint, nesciunt odio modi repellat ratione neque, nostrum provident id, eaque ullam labore sequi quas repellendus doloremque. Repellat, itaque. Dolor, quaerat!</p>
-    <button type="button" class="btn btn-primary btn-lg btn-me">LA SFIDA INIZIA QUI</button>
+  <div class="container mt-3 text-center centra">
+    <div class="row">
+      <div class="col-lg-10 offset-1">
+        <h1>CHALLENGER</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. aaaaaaa Aperiam sint, nesciunt odio modi repellat ratione neque, nostrum provident id, eaque ullam labore sequi quas repellendus doloremque. Repellat, itaque. Dolor, quaerat!</p>
+        <a href="" class="btn btn-lg btn-info text-white">LA SFIDA INIZIA QUI</a>
+      </div>
+    </div>
+      
   </div>
 
   <div class="container centra_card_body">
-    <div class="row">
+    <div class="row my-5">
       <div class=" spazio col-xl-4">
         <!--start card-->
         <div class="card-wrapper">
@@ -71,7 +83,7 @@
             <div class="card-body">
               <h5 class="card-title h5 ">Libertà</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="btn btn-sm btn-outline-primary" type="submit">SCOPRI DI PIU'</button>
+              <button class="btn btn-sm btn-outline-info">SCOPRI DI PIU'</button>
             </div>
           </div>
         </div>
@@ -85,7 +97,7 @@
             <div class="card-body">
               <h5 class="card-title">Forza</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="btn btn-sm btn-outline-primary" type="submit">SCOPRI DI PIU'</button>
+              <button class="btn btn-sm btn-outline-info">SCOPRI DI PIU'</button>
             </div>
           </div>
         </div>
@@ -99,12 +111,30 @@
             <div class="card-body">
               <h5 class="card-title">Saggezza</h5>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button class="btn btn-sm btn-outline-primary" type="submit">SCOPRI DI PIU'</button>
+              <button class="btn btn-sm btn-outline-info">SCOPRI DI PIU'</button>
             </div>
           </div>
         </div>
         <!--end card-->
       </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row centra_flex_box">
+      <div class="col-1">
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem aliquid consectetur sunt quia odio eos sapiente tempora omnis ducimus, laborum amet necessitatibus culpa aperiam minima cum ad unde dolorem earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id sapiente labore earum error? Neque accusamus beatae voluptatibus veniam repudiandae facere sint excepturi amet facilis doloremque? At sapiente earum cumque!</p>
+      </div>
+      <div class="col-2">
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem aliquid consectetur sunt quia odio eos sapiente tempora omnis ducimus, laborum amet necessitatibus culpa aperiam minima cum ad unde dolorem earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id sapiente labore earum error? Neque accusamus beatae voluptatibus veniam repudiandae facere sint excepturi amet facilis doloremque? At sapiente earum cumque!</p>
+      </div> 
+      <div class="col-1">
+      </div>
+     
     </div>
   </div>
 
@@ -115,7 +145,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" class="link-secondary">SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -126,7 +156,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" class="link-secondary">SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -137,7 +167,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com"class="link-secondary">SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -152,7 +182,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" style="color: rgb(104, 100, 100);">SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -163,7 +193,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" style="color: rgb(104, 100, 100);">SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -174,7 +204,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com"style="color: rgb(104, 100, 100);" >SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -189,7 +219,7 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" style="color: rgb(104, 100, 100);">SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -200,18 +230,18 @@
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" style="color: rgb(104, 100, 100);" >SITO GOOGLE</a>
             </div>
           </div>
         </div>
         <!--end card-->
       </div>
-      <div class="spazio col-xl-4">
+      <div class="spazio col-xl-4 spazio_fondo_pagina">
         <!--start card-->
         <div class="card-wrapper">
           <div class="card">
             <div class="card-body">
-              <a href="http://google.com">SITO GOOGLE</a>
+              <a href="http://google.com" style="color: rgb(104, 100, 100);" >SITO GOOGLE</a>
             </div>
           </div>
         </div>
@@ -220,23 +250,8 @@
     </div>
   </div>
 
-  <!--<div class="container">
-    <ul class="flex_container">
-      <li class="flex_item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione iusto, doloribus saepe, facilis odit exercitationem fugit error unde nesciunt repellendus officia minus beatae quidem obcaecati blanditiis, ad quisquam a magnam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione iusto, doloribus saepe, facilis odit exercitationem fugit error unde nesciunt repellendus officia minus beatae quidem obcaecati blanditiis, ad quisquam a magnam!</li>
-      <li class="flex_item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione iusto, doloribus saepe, facilis odit exercitationem fugit error unde nesciunt repellendus officia minus beatae quidem obcaecati blanditiis, ad quisquam a magnam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione iusto, doloribus saepe, facilis odit exercitationem fugit error unde nesciunt repellendus officia minus beatae quidem obcaecati blanditiis, ad quisquam a magnam!</li>
-    </ul>
-  </div>-->
-
-  
-  </div>
   
   
-
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
